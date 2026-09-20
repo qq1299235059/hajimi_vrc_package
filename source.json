@@ -1,0 +1,19 @@
+{
+  "name": "Avatar Part Assembler Packages",
+  "id": "com.qq1299235059.avatar-part-assembler-listing",
+  "url": "https://qq1299235059.github.io/hajimi_vrc_package/index.json",
+  "author": {
+    "name": "qq1299235059",
+    "email": "qwe1299235059@gmail.com",
+    "url": "https://github.com/qq1299235059"
+  },
+  "description": "VPM package listing for Avatar Part Assembler.",
+  "infoLink": {
+    "url": "https://github.com/qq1299235059/avatar-part-assembler",
+    "text": "Avatar Part Assembler on GitHub"
+  },
+  "bannerUrl": "banner.png",
+  "githubRepos": [
+    "qq1299235059/avatar-part-assembler"
+  ]
+}
