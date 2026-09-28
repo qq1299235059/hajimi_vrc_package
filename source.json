@@ -1,5 +1,5 @@
 {
-  "name": "Avatar Part Assembler Packages",
+  "name": "Hajimi VRC Packages",
   "id": "com.qq1299235059.avatar-part-assembler-listing",
   "url": "https://qq1299235059.github.io/hajimi_vrc_package/index.json",
   "author": {
@@ -7,13 +7,15 @@
     "email": "qwe1299235059@gmail.com",
     "url": "https://github.com/qq1299235059"
   },
-  "description": "VPM package listing for Avatar Part Assembler.",
+  "description": "VPM package listing for Avatar Part Assembler and VRC UV Fix Tool.",
   "infoLink": {
-    "url": "https://github.com/qq1299235059/avatar-part-assembler",
-    "text": "Avatar Part Assembler on GitHub"
+    "url": "https://github.com/qq1299235059/hajimi_vrc_package",
+    "text": "Hajimi VRC package sources"
   },
   "bannerUrl": "banner.png",
   "githubRepos": [
-    "qq1299235059/avatar-part-assembler"
+    "qq1299235059/avatar-part-assembler",
+    "qq1299235059/vrc_uv_fix_tool"
   ]
 }
+
