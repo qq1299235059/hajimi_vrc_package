@@ -1,24 +1,19 @@
-# Avatar Part Assembler VPM Listing
+# Hajimi VRC VPM Listing
 
-这个仓库发布 `avatar-part-assembler` 的 VRChat Creator Companion / VPM 软件包清单。
+这个仓库发布以下 VRChat Creator Companion / VPM 软件包的清单：
 
-- VPM 清单：<https://qq1299235059.github.io/hajimi_vrc_package/index.json>
-- 发布页：<https://qq1299235059.github.io/hajimi_vrc_package/>
-- 源码仓库：<https://github.com/qq1299235059/avatar-part-assembler>
+- [Avatar Part Assembler](https://github.com/qq1299235059/avatar-part-assembler)
+- [VRC UV Fix Tool](https://github.com/qq1299235059/vrc_uv_fix_tool)
 
-## 工作方式
+订阅地址：<https://qq1299235059.github.io/hajimi_vrc_package/index.json>
 
-`source.json` 将公开的 `avatar-part-assembler` 仓库列为软件包来源。源仓库中的 GitHub Actions 会读取根目录 `package.json`，生成 VPM ZIP（同时生成 UnityPackage），并按版本发布 GitHub Release。
+发布页：<https://qq1299235059.github.io/hajimi_vrc_package/>
 
-本仓库的 **Build VPM Listing** 工作流使用 VRChat 官方的 `package-list-action`：
+在 VCC 中打开 **Settings > Packages > Add Repository**，粘贴订阅地址即可。
 
-- 每 15 分钟自动检查源仓库的新 Release；
-- 也可以在 Actions 页面手动运行；
-- 生成 `Website/index.json` 和发布页；
-- 发布页可以直接点击 **Add to VCC**，或把上面的清单 URL 添加到 VCC。
+## 自动更新
 
-## 版本发布
+`source.json` 中的 `githubRepos` 列出公开的包仓库。本仓库的 **Build VPM Listing** 工作流每 15 分钟检查这些仓库的 GitHub Release，并更新 GitHub Pages 上的 VPM 清单。也可以在 Actions 页面手动运行。
 
-更新 `avatar-part-assembler/package.json` 的 `version` 后推送到 `main`，源仓库会自动生成对应版本的 Release。VPM 清单会在下一次工作流运行时收录该版本。
+VRC UV Fix Tool 的 `package.json` 版本号更新并推送到 `main` 后，源仓库的发布工作流会创建对应的 `v<version>` tag、VPM ZIP 和 GitHub Release。订阅源在下一轮自动构建时收录新版本。
 
-`source.json` 中的 `githubRepos`、清单 URL 和仓库信息是发布配置的唯一来源；若更换仓库名或 GitHub Pages 地址，请同步更新这些字段。
