@@ -53,7 +53,7 @@ jobs:
 
       - name: Build package version listing
         # Website/index.json is an Actions artifact, so rebuild from every source release.
-        run: ${{ env.pathToCi }}/build.cmd BuildMultiPackageListing --root ${{ env.pathToCi }} --list-publish-directory ${{ github.workspace }}/${{ env.listPublishDirectory }} --current-listing-url https://raw.githubusercontent.com/qq1299235059/hajimi_vrc_package/main/Website/index.json
+        run: ${{ env.pathToCi }}/build.cmd BuildMultiPackageListing --root ${{ env.pathToCi }} --list-publish-directory ${{ github.workspace }}/${{ env.listPublishDirectory }} --current-listing-url https://qq1299235059.github.io/hajimi_vrc_package/index.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
